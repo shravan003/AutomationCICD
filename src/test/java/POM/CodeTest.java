@@ -34,6 +34,7 @@ public class CodeTest {
             String currentTitle = basePage.getDriver().getTitle();
             String expectedTitle = "OrangeHRM";
             Assert.assertEquals(currentTitle, expectedTitle, "Title does not match expected value");
+             Assert.fail();
         } catch (Exception e) {
             test.fail("Failed to open URL");
             Assert.fail("Exception occurred: " + e.getMessage());
