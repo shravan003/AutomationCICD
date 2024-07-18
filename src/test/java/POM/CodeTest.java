@@ -34,6 +34,7 @@ public class CodeTest {
             String currentTitle = basePage.getDriver().getTitle();
             String expectedTitle = "OrangeHRM";
             Assert.assertEquals(currentTitle, expectedTitle, "Title does not match expected value");
+          
         } catch (Exception e) {
             test.fail("Failed to open URL");
             Assert.fail("Exception occurred: " + e.getMessage());
@@ -58,6 +59,7 @@ public class CodeTest {
         try {
             adminPage.navigateToAdmin();
             test.pass("Navigated to Admin page successfully.");
+            Assert.fail();
         } catch (Exception e) {
             test.fail("Failed to navigate to Admin page.");
             Assert.fail("Exception occurred: " + e.getMessage());
