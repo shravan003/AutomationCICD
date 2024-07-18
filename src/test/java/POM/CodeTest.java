@@ -58,6 +58,7 @@ public class CodeTest {
         try {
             adminPage.navigateToAdmin();
             test.pass("Navigated to Admin page successfully.");
+            Assert.fail();
         } catch (Exception e) {
             test.fail("Failed to navigate to Admin page.");
             Assert.fail("Exception occurred: " + e.getMessage());
